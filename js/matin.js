@@ -38,7 +38,7 @@ async function allData() {
 let getWeekDay = (date) => new Date(date);
 async function getData() {
    try {
-      let searchValue = searchFor.value ? searchFor.value : "gamasa= ";
+      let searchValue = searchFor.value ? searchFor.value : "gamasa ";
       let weatherData = await (
          await fetch(
             `https://api.weatherapi.com/v1/forecast.json?key=beaa6830775a4e99910131438220406&q=${searchValue}07112&days=3`
